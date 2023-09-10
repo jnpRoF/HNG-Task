@@ -12,7 +12,7 @@ const dayArr = [
 
 const date = new Date();
 const day = date.getDay();
-const time = date.getUTCMilliseconds();
+const time = date.getTime();
 
 dayText.innerHTML = dayArr[day];
 timeText.innerHTML = time;
