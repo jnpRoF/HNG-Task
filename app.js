@@ -10,9 +10,12 @@ const dayArr = [
   "Saturday",
 ];
 
-const date = new Date();
+let date = new Date();
 const day = date.getDay();
-const time = date.getTime();
+setInterval(() => {
+  let date = new Date();
+  const time = date.getTime();
+  timeText.innerHTML = time;
+}, 1000);
 
 dayText.innerHTML = dayArr[day];
-timeText.innerHTML = time;
