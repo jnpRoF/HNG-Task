@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HNGx Frontend Stage One Task</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page_container">
+      <div class="page_wrapper">
+        <div class="img_cont">
+          <img
+            src="./Johnson_pic.jpeg"
+            alt="jpRoF"
+            data-testid="slackDisplayImage"
+            class="my_img"
+          />
+        </div>
+        <div class="name_cont">
+          <h2 data-testid="slackUserName">jpRoF</h2>
+        </div>
+        <div class="day_cont">
+          <p data-testid="currentDayOfTheWeek" class="day_text"></p>
+        </div>
+        <div class="time_cont">
+          <p data-testid="currentUTCTime" class="time_text"></p>
+        </div>
+        <div class="track_cont">
+          <p data-testid="myTrack">Track: Frontend</p>
+        </div>
+        <div class="btn_cont">
+          <a href="https://github.com/jnpRoF">
+            <button data-testid="githubURL" class="btn">
+              View GitHub repo
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
