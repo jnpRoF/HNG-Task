@@ -12,10 +12,7 @@ const dayArr = [
 
 let date = new Date();
 const day = date.getDay();
-setInterval(() => {
-  let date = new Date();
-  const time = date.getTime();
-  timeText.innerHTML = time;
-}, 1000);
+const time = date.getTime();
 
 dayText.innerHTML = dayArr[day];
+timeText.innerHTML = time;
